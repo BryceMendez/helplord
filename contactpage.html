@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            background: url(lu.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            max-width: 310px;
+            margin: 20px auto;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px orange;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #ff8c00; /* Orange accent */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #cc7000; /* Darker orange on hover */
+        }
+
+        a {
+            color: #1900ff;
+        }
+        b {
+            color: #fff;
+        }
+        c {
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 600px) {
+            form {
+                padding: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="logo-container">
+            <a href="#" class="logo"><img src="logo.png" width="70px" height="50px" class="logo"></a>
+            <div class="logo-text">
+                <h6>GAMING RIFT</h6>
+                <h6>MARKETPLACE</h6>
+            </div>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><img src="hue.png" width="40px" height="40px"></a>
+        </div>
+        <div id="bar" onclick="toggleSidebar()"> 
+            <img src="bar.png" width="40px" height="40px">
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="third.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="topup-page.html">Top Ups</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contactpage.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><img src="hue.png" width="30px" height="25px"></a></li>
+                <a href="#" id="close-sidebar" onclick="toggleSidebar()"><img src="close.png" width="30px" height="25px"></a>
+            </ul>
+        </div>
+    </section>
+<form onsubmit="showsubmit();">       
+        
+    <h1>Contact Us</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+     
+    <p><c href="maldito : You can also reach us at"> You can also reach us at</c> <a href="mailto:GamingRift@gmail.com">GamingRift@gmail.com</a><b href="maldito: or call us at 09-6858-6110"> or call us at 09-6858-6110</b></p>
+    <input type="submit" value="Submit">
+</form>
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="logo.png" width="90px" height="70px">
+        <h5>CONTACT</h5>
+        <p><strong>Adress: </strong> University of Cebu - Banilad</p>
+        <p><strong>Phone: </strong> 09-6858-6110</p>
+        <p><strong>Hours: </strong> 24 Hours Open</p>
+        <div class="follow">
+            <h5>Follow us</h5>
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100009844337998">
+                    <img src="fb.png" width="30px" height="30px">
+                </a>
+                <a href="https://discord.gg/VXDAPgeF">
+                    <img src="discord.png" width="30px" height="30px">
+                </a>
+                <a href="https://www.instagram.com/yce_mndz/">
+                    <img src="insta.png" width="30px" height="30px">
+                </a>
+                <a href="https://www.pinterest.ph/YCEY_B/">
+                    <img src="pinterest.png" width="30px" height="30px">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h5>ABOUT</h5>
+        <a href="about.html">About us</a>
+        <a href="about.html">Privacy Policy</a>
+        <a href="about.html">Terms and Conditions</a>
+        <a href="contactpage.html">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h5>MY ACCOUNT</h5>
+        <a href="#">Sign In</a>
+        <a href="cart.html">View cart</a>
+        <a href="contactpage.html">Help</a>
+    </div>
+
+    <div class="col install">
+        <h5>GET MORE INFORMATION</h5>
+        <p> Visit our Facebook Page </p>
+        <div class="row">
+            <img src="nah.png" width="50px" height="50px">
+            <img src="noh.png" width="50px" height="50px">
+        </div>
+        <p>your trusted and secure gaming shop</p>
+        <img src="control.png" width="50px" height="50px">
+    </div>
+
+    <div class="copyright">
+
+        <p>@2023.FinalProject/HTML/CSS/JAVA/WebyDevy.com</p>
+    </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var sideNavbar = document.getElementById("navbar");
+    var closeSidebarButton = document.getElementById("close-sidebar");
+
+    closeSidebarButton.addEventListener("click", function () {
+        sideNavbar.classList.add("hidden");
+    });
+});
+
+function toggleSidebar() {
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle('hidden');
+}
+
+    function showsubmit(){
+    var val = "Your message has been sent";
+    alert(val); 
+}
+
+</script>
+</body>
+</html>
+
